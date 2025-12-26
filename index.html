@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ZERT Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="6;url=https://zertcraft.xyz">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #0a1a2f, #000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .logo {
+      font-size: 90px;
+      font-weight: bold;
+      color: #00aaff;
+      text-shadow: 0 0 20px #00aaff, 0 0 40px #0077ff;
+      animation: pulse 2s infinite;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00aaff;
+      margin: 20px auto;
+      box-shadow: 0 0 25px rgba(0,170,255,0.6);
+    }
+
+    .text {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    .loading {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: #00aaff;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .dot:nth-child(2) { animation-delay: .2s; }
+    .dot:nth-child(3) { animation-delay: .4s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0); }
+      40% { transform: scale(1); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .redirect {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">Z</div>
+
+    <img
+      class="avatar"
+      src="https://github.com/zertcihuyy.png"
+      alt="GitHub Profile"
+    >
+
+    <div class="text">
+      Welcome to my portfolio<br>
+      <strong>ZERT</strong>
+    </div>
+
+    <div class="loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <div class="redirect">
+      Redirecting to zertcraft.xyz...
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://zertcraft.xyz";
+    }, 6000);
+  </script>
+
+</body>
+</html>
